@@ -27,3 +27,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`App listening to port ${PORT}`);
 });
+
+const mainRoutes = require("./routes/mainRoutes")
+app.use("/", mainRoutes);
